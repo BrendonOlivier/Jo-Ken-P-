@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JoKenPo Master</title>
+</head>
+<body>
+    <a class="reação">&#x1F63C;</a> 
+
+    <div class="caixote">
+
+        <h1>JoKenPô</h1>
+
+        <div class="botoes">
+            <button id="Pedra" onclick="playHuman('Pedra')">&#x270A;</button>
+            <button id="Papel" onclick="playHuman('Papel')">&#x270B;</button>
+            <button id="Tesoura" onclick="playHuman('Tesoura')">&#x270C;</button>
+        </div>
+        
+
+        <p class="resultado"></p>
+
+        <p class="Minha-pontuação">Sua Pontuação: <span id="meuResultado">0</span></p>
+        <p class="Pontuaçao-master">Pontuação do Master:  <span id="masterResultado">0</span></p>
+
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

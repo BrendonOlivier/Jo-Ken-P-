@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://source.unsplash.com/1600x900/?landscape);
+    background-size: cover;             /*Para o celular = background-size: 395%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;                  /* Altura minima do meu body, para enfim alinhar ao centro*/
+
+}
+
+.reação {
+    font-size: 100px;
+    position: fixed;
+    top: 15px;
+}
+
+.caixote {
+    background-color: rgb(184, 182, 182);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.botoes {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    font-size: 50px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#Pedra {
+    background-color: rgb(75, 21, 126);
+}
+
+#Papel {
+    background-color: rgb(126, 18, 18);
+}
+
+#Tesoura {
+    background-color: rgb(8, 83, 52);
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Minha-pontuação span{
+    color: red;
+}
+
+.Pontuaçao-master span{
+    color: rgb(44, 9, 170);
+}
+
+@media (max-width: 1100px) {
+
+    .reação {
+        font-size: 150px;
+        position: fixed;
+        top: 40px;
+    }
+}
